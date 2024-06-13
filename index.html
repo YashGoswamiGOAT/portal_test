@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <i class="fas fa-user-circle fa-4x"></i> <!-- Profile Icon -->
+                <h2>Yash Goswami</h2>
+                <a href="#">View profile</a>
+            </div>
+            <nav class="menu">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#news">News</a>
+                <a href="#calendar">Calendar</a>
+                <a href="#education-portal">Student Education Portal</a>
+                <a href="#finance">Finance</a>
+                <a href="#forms">Forms</a>
+                <a href="#contact">Contact</a>
+                <a href="#notifications">Notifications</a>
+                <a href="#logout">Logout</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <button class="menu-toggle">☰</button>
+            </header>
+            <section id="dashboard" class="page active">
+                <h2>Dashboard</h2>
+                <p>Welcome to the Dashboard.</p>
+
+                <div class="section recent-activity">
+                    <h3>Recent Activity</h3>
+                    <ul>
+                        <li>Participated in the Coding Hackathon</li>
+                        <li>Completed the AI Module</li>
+                        <li>Attended the Web Development Workshop</li>
+                    </ul>
+                </div>
+
+                <div class="section running-projects">
+                    <h3>Running Projects</h3>
+                    <ul>
+                        <li>AI Chatbot Development</li>
+                        <li>Website Redesign for Local Business</li>
+                        <li>Machine Learning Model for Predicting Sales</li>
+                    </ul>
+                </div>
+
+                <div class="section batch-toppers">
+                    <h3>2024 Batch Toppers</h3>
+                    <ul>
+                        <li>Yash Goswami</li>
+                        <li>Prakhar Vaish</li>
+                        <li>Gaurav Bhatia</li>
+                    </ul>
+                </div>
+
+                <div class="section achievements">
+                    <h3>Achievements</h3>
+                    <ul>
+                        <li>First Prize in National Science Fair</li>
+                        <li>Best Paper Award in International AI Conference</li>
+                        <li>Top Performer in Data Science Course</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="news" class="page">
+                <h2>News</h2>
+                <p>Latest news and updates.</p>
+            </section>
+            <section id="calendar" class="page active">
+                <h1>Attendance Calendar</h1>
+                <div class="calendar-header">
+                    <button>&lt;</button>
+                    <h2>January, 2020</h2>
+                    <button>&gt;</button>
+                </div>
+                <div class="calendar">
+                    <!-- Calendar dates will go here -->
+                </div>
+                <div class="summary">
+                    <div class="total-working-days">
+                        <p>Total Working Days</p>
+                        <h3>24</h3>
+                    </div>
+                    <div class="attendance-stats">
+                        <div class="absent">
+                            <p>Total Absent</p>
+                            <h3>03</h3>
+                        </div>
+                        <div class="present">
+                            <p>Total Present</p>
+                            <h3>21</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="education-portal" class="page">
+                <h2>Student Education Portal</h2>
+                <p>Access your educational resources.</p>
+            
+                <form id="enrollment-form" class="enrollment-form">
+                    <div class="form-group">
+                        <label for="student-name">Student Name</label>
+                        <input type="text" id="student-name" name="student-name" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="guardian-number">Student Guardian's Number</label>
+                        <input type="tel" id="guardian-number" name="guardian-number" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="percentage-10th">Percentage in 10th</label>
+                        <input type="number" id="percentage-10th" name="percentage-10th" step="0.01" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="percentage-12th">Percentage in 12th</label>
+                        <input type="number" id="percentage-12th" name="percentage-12th" step="0.01" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="branch">Choose Branch</label>
+                        <select id="branch" name="branch" required>
+                            <option value="">Select Branch</option>
+                            <option value="btech-ece">B.Tech (ECE)</option>
+                            <option value="btech-cse">B.Tech (CSE)</option>
+                            <option value="mca">MCA</option>
+                        </select>
+                    </div>
+            
+                    <div class="form-group">
+                        <button type="submit">Enroll</button>
+                    </div>
+                </form>
+            </section>            
+            <section id="finance" class="page">
+                <h2>Finance</h2>
+                <p>Manage your finances.</p>
+            </section>
+            <section id="forms" class="page">
+                <h2>Forms</h2>
+                <p>Fill out necessary forms.</p>
+            </section>
+            <section id="contact" class="page">
+                <h2>Contact</h2>
+                <p>Get in touch with us.</p>
+            </section>
+<section id="notifications" class="page">
+    <h2>Notifications</h2>
+    <div class="notification">
+        <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg" height="50px" width="50px" class="notification_admin" alt="Profile Picture">
+        <div class="notification-content">
+            <h3>Abhay Sharma <span class="time">10 minutes ago</span></h3>
+            <p>Students are advised to stay within the hostel residential area as a tiger has been spotted nearby. Stay safe!</p>
+        </div>
+        <button class="reply-button"><i class="fas fa-reply"></i></button>
+        <button class="like-button"><i class="fas fa-heart"></i></button>
+    </div>
+</section>
+
+            <section id="logout" class="page">
+                <h2>Logout</h2>
+                <p>You have successfully logged out.</p>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
